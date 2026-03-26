@@ -1,0 +1,15 @@
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\bin\Debug\net10.0\Punto2.exe
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\bin\Debug\net10.0\Punto2.deps.json
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\bin\Debug\net10.0\Punto2.runtimeconfig.json
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\bin\Debug\net10.0\Punto2.dll
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\bin\Debug\net10.0\Punto2.pdb
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\obj\Debug\net10.0\Punto2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\obj\Debug\net10.0\Punto2.AssemblyInfoInputs.cache
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\obj\Debug\net10.0\Punto2.AssemblyInfo.cs
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\obj\Debug\net10.0\Punto2.csproj.CoreCompileInputs.cache
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\obj\Debug\net10.0\Punto2.sourcelink.json
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\obj\Debug\net10.0\Punto2.dll
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\obj\Debug\net10.0\refint\Punto2.dll
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\obj\Debug\net10.0\Punto2.pdb
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\obj\Debug\net10.0\Punto2.genruntimeconfig.cache
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act3\Punto2\obj\Debug\net10.0\ref\Punto2.dll
