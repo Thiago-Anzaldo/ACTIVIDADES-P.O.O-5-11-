@@ -1,0 +1,69 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Punto4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            /*4.En un banco se procesan datos de las cuentas corrientes de sus clientes. De cada
+            cuenta corriente se conoce: número de cuenta y saldo actual. El ingreso de datos debe
+            finalizar al ingresar un valor negativo en el número de cuenta.
+            Se pide confeccionar un programa que lea los datos de las cuentas corrientes e
+            informe:
+            a) De cada cuenta: número de cuenta y estado de la cuenta según su saldo, sabiendo
+            que:
+            Estado de la cuenta:
+                ○ “Acreedor” si el saldo es > 0.
+                ○ “Deudor” si el saldo es < 0.
+                ○ “Nulo” si el saldo es = 0.
+            b) La suma total de los saldos acreedores.*/
+
+            int numeroDeCuenta, sueldo, acreedores;
+            string linea;
+            bool corte;
+            corte = true;
+            acreedores = 0;
+            do
+            {
+                int dsa;
+
+                Console.Write("Numero de cliente: ");
+                linea= Console.ReadLine();
+                numeroDeCuenta = int.Parse(linea);
+
+                if (numeroDeCuenta<0)
+                {
+                    corte = false;
+                }
+                else
+                {
+                    Console.Write("Sueldo: $");
+                    linea = Console.ReadLine();
+                    sueldo=int.Parse(linea);
+
+                    if (sueldo > 0)
+                    {
+                        Console.WriteLine("Estado de la cuenta: Acreedor");
+                        acreedores++;
+                    }
+                    else if (sueldo<0)
+                    {
+                        Console.WriteLine("Estado de la cuenta: Deudor");
+                    }
+                    else {
+                        Console.WriteLine("Estado de la cuenta: Nulo");
+                    }
+                }
+            } while (corte == true);
+
+            Console.WriteLine("total de acreedores: "+acreedores);
+
+            Console.ReadKey();
+        }
+    }
+}
