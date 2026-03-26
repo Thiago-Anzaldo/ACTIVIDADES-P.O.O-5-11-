@@ -23,15 +23,17 @@ namespace Punto4
                 ○ “Nulo” si el saldo es = 0.
             b) La suma total de los saldos acreedores.*/
 
-            int numeroDeCuenta, sueldo, acreedores;
+            int[] cuentas = new int[100];
+            int[] saldos = new int[100];
+            string[] estados = new string[100];
+            int numeroDeCuenta, sueldo, sumaAcreedores;
             string linea;
             bool corte;
+            int i = 0;
             corte = true;
-            acreedores = 0;
+            sumaAcreedores = 0;
             do
             {
-                int dsa;
-
                 Console.Write("Numero de cliente: ");
                 linea= Console.ReadLine();
                 numeroDeCuenta = int.Parse(linea);
@@ -46,23 +48,30 @@ namespace Punto4
                     linea = Console.ReadLine();
                     sueldo=int.Parse(linea);
 
+                    cuentas[i] = numeroDeCuenta;
+                    saldos[i]=sueldo;
+
                     if (sueldo > 0)
                     {
-                        Console.WriteLine("Estado de la cuenta: Acreedor");
-                        acreedores++;
+                        estados[i]= "Acreedor";
+                        sumaAcreedores=sumaAcreedores+sueldo;
                     }
                     else if (sueldo<0)
                     {
-                        Console.WriteLine("Estado de la cuenta: Deudor");
+                        estados[i] = "Deudor";
                     }
                     else {
-                        Console.WriteLine("Estado de la cuenta: Nulo");
+                        estados[i] = "Nulo";
                     }
                 }
+                i++;
             } while (corte == true);
 
-            Console.WriteLine("total de acreedores: "+acreedores);
-
+            for(int j = 0; j < i; j++)
+            {
+                Console.WriteLine("Numero de cuenta: " + cuentas[j] + " - Estado de la cuenta: " + estados[j]);
+            }
+            Console.WriteLine("La suma de todos los sueldos de los acreedores es: $" + sumaAcreedores);
             Console.ReadKey();
         }
     }
