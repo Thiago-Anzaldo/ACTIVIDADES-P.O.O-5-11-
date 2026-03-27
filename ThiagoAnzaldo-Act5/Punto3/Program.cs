@@ -34,7 +34,7 @@ namespace Punto3
                 {
                     cantPositivos++;
                 }
-                else if (valorIngresado < 0)
+                else
                 {
                     cantNegativos++;
                 }

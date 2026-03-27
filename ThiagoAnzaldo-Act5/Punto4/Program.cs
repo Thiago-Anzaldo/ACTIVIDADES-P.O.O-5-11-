@@ -27,7 +27,7 @@ namespace Punto4
             sumaTurnoNo = 0;
             sumaTurnoTar = 0;
 
-            for(int m = 0; m < 10; m++)
+            for(int m = 0; m < 20; m++)
             {
                 Console.Write("Ingrese la edad de un alumno de la mañana: ");
                 linea = Console.ReadLine();
@@ -36,7 +36,7 @@ namespace Punto4
 
                 sumaTurnoMñ = edad + sumaTurnoMñ;
             }
-            for (int m = 0; m < 15; m++)
+            for (int m = 0; m < 30; m++)
             {
                 Console.Write("Ingrese la edad de un alumno de la tarde: ");
                 linea = Console.ReadLine();
@@ -45,7 +45,7 @@ namespace Punto4
 
                 sumaTurnoTar = edad + sumaTurnoTar;
             }
-            for (int m = 0; m < 7; m++)
+            for (int m = 0; m < 15; m++)
             {
                 Console.Write("Ingrese la edad de un alumno de la noche: ");
                 linea = Console.ReadLine();
