@@ -1,0 +1,14 @@
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\obj\Debug\net10.0\Punto1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\obj\Debug\net10.0\Punto1.AssemblyInfoInputs.cache
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\obj\Debug\net10.0\Punto1.AssemblyInfo.cs
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\obj\Debug\net10.0\Punto1.csproj.CoreCompileInputs.cache
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\bin\Debug\net10.0\Punto1.exe
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\bin\Debug\net10.0\Punto1.deps.json
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\bin\Debug\net10.0\Punto1.runtimeconfig.json
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\bin\Debug\net10.0\Punto1.dll
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\bin\Debug\net10.0\Punto1.pdb
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\obj\Debug\net10.0\Punto1.dll
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\obj\Debug\net10.0\refint\Punto1.dll
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\obj\Debug\net10.0\Punto1.pdb
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\obj\Debug\net10.0\Punto1.genruntimeconfig.cache
+C:\Users\anzal\Desktop\ActividadesPOO\ThiagoAnzaldo-Act6\Punto1\obj\Debug\net10.0\ref\Punto1.dll

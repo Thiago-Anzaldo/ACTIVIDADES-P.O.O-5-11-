@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Punto1/Punto1.csproj" />
+  <Project Path="Punto2/Punto2.csproj" Id="42b5a2c2-d50c-43c6-8d9e-6affb196755c" />
+  <Project Path="Punto3/Punto3.csproj" Id="5b81b6ed-0a2a-41c2-a5a6-aa416a310332" />
+  <Project Path="Punto4/Punto4.csproj" Id="2a959e44-5bf0-49e3-9a4e-1703e8e8fcdb" />
+</Solution>
