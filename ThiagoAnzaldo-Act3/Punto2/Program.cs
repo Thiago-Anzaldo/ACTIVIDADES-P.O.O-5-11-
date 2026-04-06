@@ -24,7 +24,8 @@ public class HelloWorld
         {
             suma = num1 + num2;
             producto = suma * num3;
-            Console.WriteLine("El resultado es: " + producto);
+            Console.WriteLine("la suma es es: " + suma);
+            Console.WriteLine("el producto es: " + producto);
         }
 
         Console.ReadKey();
