@@ -27,7 +27,22 @@ namespace Punto1
         }
         public void MuestraDeValores()
         {
-
+            if (x > 0 && y > 0)
+            {
+                Console.WriteLine("Se encuentra en el 1° cuadrante");
+            }
+            if (x < 0 && y > 0)
+            {
+                Console.WriteLine("Se encuentra en el 2° cuadrante");
+            }
+            if (x < 0 && y < 0)
+            {
+                Console.WriteLine("Se encuentra en el 3° cuadrante");
+            }
+            if (x > 0 && y < 0)
+            {
+                Console.WriteLine("Se encuentra en el 4° cuadrante");
+            }
         }
         static void Main(string[] args)
         {
