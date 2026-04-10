@@ -12,3 +12,10 @@ C:\Users\anzal\Desktop\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act4\Punto4\obj\Deb
 C:\Users\anzal\Desktop\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act4\Punto4\obj\Debug\Punto4.csproj.CoreCompileInputs.cache
 C:\Users\anzal\Desktop\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act4\Punto4\obj\Debug\Punto4.exe
 C:\Users\anzal\Desktop\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act4\Punto4\obj\Debug\Punto4.pdb
+C:\Users\Alumno\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act4\Punto4\bin\Debug\Punto4.exe.config
+C:\Users\Alumno\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act4\Punto4\bin\Debug\Punto4.exe
+C:\Users\Alumno\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act4\Punto4\bin\Debug\Punto4.pdb
+C:\Users\Alumno\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act4\Punto4\obj\Debug\Punto4.csproj.AssemblyReference.cache
+C:\Users\Alumno\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act4\Punto4\obj\Debug\Punto4.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act4\Punto4\obj\Debug\Punto4.exe
+C:\Users\Alumno\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act4\Punto4\obj\Debug\Punto4.pdb

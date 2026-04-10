@@ -46,7 +46,7 @@ namespace Punto1
             Console.WriteLine("Entre 100 y 300: " + entre100y300);
             Console.WriteLine("Más de 300: " + masDe300);
             Console.WriteLine("Importe total: $" + importe);
-
+            Console.ReadKey();
         }
     }
 }

@@ -23,9 +23,6 @@ namespace Punto4
                 ○ “Nulo” si el saldo es = 0.
             b) La suma total de los saldos acreedores.*/
 
-            int[] cuentas = new int[100];
-            int[] saldos = new int[100];
-            string[] estados = new string[100];
             int numeroDeCuenta, sueldo, sumaAcreedores;
             string linea;
             bool corte;
@@ -48,29 +45,22 @@ namespace Punto4
                     linea = Console.ReadLine();
                     sueldo=int.Parse(linea);
 
-                    cuentas[i] = numeroDeCuenta;
-                    saldos[i]=sueldo;
-
                     if (sueldo > 0)
                     {
-                        estados[i]= "Acreedor";
+                        Console.WriteLine( "Acreedor");
                         sumaAcreedores=sumaAcreedores+sueldo;
                     }
                     else if (sueldo<0)
                     {
-                        estados[i] = "Deudor";
+                        Console.WriteLine("Adeudor");
                     }
                     else {
-                        estados[i] = "Nulo";
+                        Console.WriteLine("Nulo");
                     }
                 }
                 i++;
             } while (corte == true);
 
-            for(int j = 0; j < i; j++)
-            {
-                Console.WriteLine("Numero de cuenta: " + cuentas[j] + " - Estado de la cuenta: " + estados[j]);
-            }
             Console.WriteLine("La suma de todos los sueldos de los acreedores es: $" + sumaAcreedores);
             Console.ReadKey();
         }
