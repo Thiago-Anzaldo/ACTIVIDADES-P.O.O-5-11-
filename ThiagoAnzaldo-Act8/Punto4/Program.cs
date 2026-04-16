@@ -60,7 +60,7 @@ namespace Punto4
             {
                 for (int f = 0; f < 4; f++)
                 {
-                    if (habitantes[f] > habitantes[f + 1])
+                    if (habitantes[f] < habitantes[f + 1])
                     {
                         auxHab = habitantes[f];
                         habitantes[f] = habitantes[f + 1];
@@ -86,7 +86,7 @@ namespace Punto4
             Console.WriteLine("Habitantes ordenados: ");
             for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine(habitantes[i] +": "+ paises[i]);
+                Console.WriteLine(paises[i] + ": " + habitantes[i]);
             }
         }
         static void Main(string[] args)

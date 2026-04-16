@@ -14,8 +14,14 @@ namespace Punto1
 
         public void Carga()
         {
+            int cantidadElementos = 0;
             string linea;
-            vector = new int[5];
+            Console.Write("Ingrese el tamaño de vector: ");
+            linea = Console.ReadLine();
+            cantidadElementos = int.Parse(linea);
+
+            vector = new int[cantidadElementos];
+
             for(int i = 0; i < vector.Length; i++)
             {
                 Console.Write("Ingrese los valores del vector: ");
