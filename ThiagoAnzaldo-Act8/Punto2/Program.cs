@@ -25,18 +25,35 @@ namespace Punto2
         }
         public void OrdenAlfabetico() 
         {
+            string aux=paises[0];
+            for (int i = 0; i < 4; i++) 
+            {
+                for(int j = 0; j < 4; j++) 
+                {
+                    if (paises[j].CompareTo(paises[j+1]) > 0) 
+                    {
+                        aux=paises[j];
+                        paises[j] = paises[j + 1];
+                        paises[j+1]=aux;
+                    }
+                }
+            }
+        }
+        public void Muestra() 
+        {
             for (int i = 0; i < 5; i++) 
             {
-                for(int j = 0; j < 5; j++) 
-                {
-                
-                }
+                Console.WriteLine(paises[i]);
             }
         }
         static void Main(string[] args)
         {
-            Paises paises = new Paises();
-            paises.CargaPaises();
+            Paises p = new Paises();
+            p.CargaPaises();
+            p.OrdenAlfabetico();
+            p.Muestra();
+
+            Console.ReadKey();
         }
     }
 }

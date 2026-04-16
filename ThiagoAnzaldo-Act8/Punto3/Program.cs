@@ -19,18 +19,18 @@ namespace Punto1
             for(int i = 0; i < vector.Length; i++)
             {
                 Console.Write("Ingrese los valores del vector: ");
-                linea = Console.ReadLine();
+                linea = Console.ReadLine()!;
                 vector[i] = int.Parse(linea);
             }
         }
         public void Ordenar()
         {
             int aux = vector[0];
-            for (int k = 0; k < 5; k++)
+            for (int k = 0; k < 4; k++)
             {
-                for (int f = 0; f < 5 - 1 - k; f++)
+                for (int f = 0; f < 4 ; f++)
                 {
-                    if (vector[f] < vector[f + 1])
+                    if (vector[f] > vector[f + 1])
                     {
                         aux = vector[f];
                         vector[f] = vector[f + 1];
@@ -38,7 +38,10 @@ namespace Punto1
                     }
                 }
             }
-            for (int i = 0; i < vector.Length; i++) 
+        }
+        public void Muestra() 
+        {
+            for (int i = 0; i < vector.Length; i++)
             {
                 Console.WriteLine(vector[i]);
             }
@@ -48,6 +51,7 @@ namespace Punto1
             Ordenamiento o = new Ordenamiento();
             o.Carga();
             o.Ordenar();
+            o.Muestra();
             Console.ReadKey();
         }
     }
