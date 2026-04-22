@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\anzal\\Desktop\\ACTIVIDADES-P.O.O-5-11-\\ThiagoAnzaldo-Act9\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58C13DC0-E86F-46DC-8D97-DFD24579F931}|Punto2\\Punto2.csproj|c:\\users\\anzal\\desktop\\actividades-p.o.o-5-11-\\thiagoanzaldo-act9\\punto2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58C13DC0-E86F-46DC-8D97-DFD24579F931}|Punto2\\Punto2.csproj|solutionrelative:punto2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9176639-D4BF-43F1-9CC0-3EEB97FFD5B6}|Punto1\\Punto1.csproj|c:\\users\\anzal\\desktop\\actividades-p.o.o-5-11-\\thiagoanzaldo-act9\\punto1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9176639-D4BF-43F1-9CC0-3EEB97FFD5B6}|Punto1\\Punto1.csproj|solutionrelative:punto1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anzal\\Desktop\\ACTIVIDADES-P.O.O-5-11-\\ThiagoAnzaldo-Act9\\Punto2\\Program.cs",
+              "RelativeDocumentMoniker": "Punto2\\Program.cs",
+              "ToolTip": "C:\\Users\\anzal\\Desktop\\ACTIVIDADES-P.O.O-5-11-\\ThiagoAnzaldo-Act9\\Punto2\\Program.cs",
+              "RelativeToolTip": "Punto2\\Program.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T02:04:41.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anzal\\Desktop\\ACTIVIDADES-P.O.O-5-11-\\ThiagoAnzaldo-Act9\\Punto1\\Program.cs",
+              "RelativeDocumentMoniker": "Punto1\\Program.cs",
+              "ToolTip": "C:\\Users\\anzal\\Desktop\\ACTIVIDADES-P.O.O-5-11-\\ThiagoAnzaldo-Act9\\Punto1\\Program.cs",
+              "RelativeToolTip": "Punto1\\Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T02:04:34.978Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
