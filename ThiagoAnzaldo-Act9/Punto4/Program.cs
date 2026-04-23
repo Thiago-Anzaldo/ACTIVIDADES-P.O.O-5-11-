@@ -34,23 +34,32 @@ namespace Punto4
 
         public void MejorYPeorNota()
         {
+            string docentePeorNota = "";
+            string docenteMejorNota = "";
             int mejorNota = 0;
-            int peorNota = 0;
+            int peorNota = calificaciones[0];
 
-            for (int i = 1; i < docentes.Length; i++)
+            for (int i = 0; i < docentes.Length; i++)
             {
-                if (calificaciones[i] > mejorNota)
+                if (calificaciones[i] >= mejorNota)
                 {
                     mejorNota = calificaciones[i];
-                }
-                if (calificaciones[i] < peorNota)
-                {
-                    peorNota = calificaciones[i];
+                    docenteMejorNota += docentes[i]+" ";
+
                 }
             }
 
-            Console.WriteLine("La mejor calificación es: " + mejorNota);
-            Console.WriteLine("La peor calificación es: " + peorNota);
+                for (int i = 1; i < docentes.Length; i++)
+                {
+                    if (calificaciones[i] <= peorNota)
+                    {
+                        peorNota = calificaciones[i];
+                        docentePeorNota += docentes[i]+" ";
+                    }
+                }
+
+            Console.WriteLine("La mejor calificación es: " + mejorNota+ " y los que se la sacaron fueron: "+docenteMejorNota);
+            Console.WriteLine("La peor calificación es: " + peorNota+" y los que se la sacaron fueron: "+docentePeorNota);
         }
 
         public void OrdenarDocentes()
