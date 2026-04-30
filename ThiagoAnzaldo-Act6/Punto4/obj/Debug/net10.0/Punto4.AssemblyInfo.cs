@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Punto4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e48e391f91820d3de14df3c06390bc9232af61a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Punto4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Punto4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
