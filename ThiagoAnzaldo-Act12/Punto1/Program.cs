@@ -90,7 +90,7 @@ namespace Punto1
             }
             for(int i = 0;i < totalPeso.Length; i++) {
                 Console.WriteLine("nombre de la sucursal: " + nombreSucursales[i]);
-                Console.WriteLine("peso total: "+totalPeso[i]);
+                Console.WriteLine("peso total: "+totalPeso[i]+"kg");
             }
             Console.WriteLine("\n");
         }
@@ -114,7 +114,7 @@ namespace Punto1
             }
             Console.WriteLine("ENVIO MAS PESADO!!");
             Console.WriteLine("nombre de la sucursal: "+sucursalPaqueteMasPesado);
-            Console.WriteLine("peso del paquete: "+paqueteMasPesado);
+            Console.WriteLine("peso del paquete: "+paqueteMasPesado+"kg");
             Console.WriteLine("numero de paquete: N°"+numeroPaquete);
         }
         static void Main(string[] args)
