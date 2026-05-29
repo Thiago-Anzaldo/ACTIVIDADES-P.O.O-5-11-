@@ -19,7 +19,7 @@ namespace Punto2
     {
         private string nombre;
         private int dni;
-        private double equipajeKilos;
+        private double equipajePeso;
 
         public Pasajero()
         {
@@ -34,15 +34,82 @@ namespace Punto2
 
             Console.Write("Escriba el peso de su equipaje: ");
             linea = Console.ReadLine();
-            equipajeKilos = double.Parse(linea);
+            equipajePeso = double.Parse(linea);
+            Console.WriteLine("\n");
+        }
 
+        public int dniPasajero() 
+        {
+            return dni;
+        }
+
+        public string nombrePasajero()
+        {
+            return nombre;
+        }
+
+        public double pesoPasajero()
+        {
+            return equipajePeso;
         }
     }
 
-    class Program
+    class Vuelo
     {
+        private Pasajero[] pasajeros;
+
+        public Vuelo() 
+        {
+            pasajeros = new Pasajero[4];
+
+            for(int i = 0; i < 4; i++)
+            {
+                pasajeros[i] = new Pasajero();
+            }
+        }
+
+        public void Muestra() 
+        {
+            for (int i = 0; i < pasajeros.Length; i++) 
+            {
+                Console.WriteLine("Nombre del pasajero: "+pasajeros[i].nombrePasajero());
+                Console.WriteLine("DNI del pasajero: "+pasajeros[i].dniPasajero());
+                Console.WriteLine("Peso del equipaje: "+pasajeros[i].pesoPasajero());
+                Console.WriteLine("\n");
+            } 
+        }
+
+        public void PesoTotal()
+        {
+            double pesoTotalEquipaje = 0;
+
+            for (int i=0; i < 4; i++) 
+            {
+                pesoTotalEquipaje+= pasajeros[i].pesoPasajero();
+            }
+
+            Console.WriteLine("El peso total del avion es de: "+pesoTotalEquipaje);
+            Console.WriteLine("\n");
+        }
+        public void MasDeLimite() 
+        {
+            for (int i=0; i < 4; i++) 
+            {
+                if (pasajeros[i].pesoPasajero() > 23)
+                {
+                    Console.WriteLine("El pasajero "+pasajeros[i].nombrePasajero()+" supero el peso maximo");
+                    Console.WriteLine("DNI: " + pasajeros[i].dniPasajero());
+                    Console.WriteLine("\n");
+                }
+            }
+        }
         static void Main(string[] args)
         {
+            Vuelo v =new Vuelo();
+            v.Muestra();
+            v.PesoTotal();
+            v.MasDeLimite();
+            Console.ReadKey();
         }
     }
 }
