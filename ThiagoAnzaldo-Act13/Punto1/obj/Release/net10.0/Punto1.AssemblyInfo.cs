@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Punto1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31bc85f83103dc25e9922c7ef8ca670745d84fb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+475a2c55a2f1f29fce2ccfdb23c5451ed0c053ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("Punto1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Punto1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
