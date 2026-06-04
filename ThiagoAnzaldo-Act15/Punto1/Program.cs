@@ -147,6 +147,7 @@ namespace Punto1
             sala.mostrarGrilla();
             sala.promedioRitmoCardiaco();
             sala.verificacionCardiaca();
+            Console.ReadKey();
         }
     }
 }
