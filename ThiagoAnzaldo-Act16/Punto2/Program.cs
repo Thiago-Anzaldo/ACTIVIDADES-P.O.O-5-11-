@@ -126,14 +126,27 @@ namespace Punto2
             while (p3.Precio < 1);
         }
 
-        //public void MayorAMenor() 
-        //{
-        //    invent[0] = p1.Precio;
-        //}
+        public void MayorAMenor() 
+        {
+            Producto[] lista = new Producto[3];
+            lista[0] = p1;
+            lista[1] = p2;
+            lista[2] = p3;
+
+            Array.Sort(lista, (a, b) => a.Precio.CompareTo(b.Precio));
+
+            Console.WriteLine("Primer puesto: "+ lista[0].Nombre +" Precio: "+ lista[0].Precio);
+            Console.WriteLine("Segundo puesto: " + lista[1].Nombre + " Precio: " + lista[1].Precio);
+            Console.WriteLine("Tercer puesto: " + lista[2].Nombre + " Precio: " + lista[2].Precio);
+
+            Console.WriteLine("mas barato: " + lista[0].Nombre + " Precio: " + lista[0].Precio)
+            Console.WriteLine("mas caro: " + lista[0].Nombre + " Precio: " + lista[0].Precio);
+        }
         static void Main(string[] args)
         {
-            Inventario inventario = new Inventario();
-            inventario.IngresoDatos();
+            Inventario i = new Inventario();
+            i.IngresoDatos();
+            i.MayorAMenor();
         }
     }
 }
