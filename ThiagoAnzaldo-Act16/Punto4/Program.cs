@@ -27,6 +27,7 @@
             public Animal()
             {
                 especie="mamifero";
+            Console.WriteLine(especie+" (clase animal)");
             }
         }
 
@@ -38,7 +39,8 @@
             public Mamifero()
             {
                 tipoAlimentacion = "carnivoro";
-            }
+            Console.WriteLine(tipoAlimentacion + " (clase mamifero)");
+        }
 
             public class Perro : Mamifero
             {
@@ -46,14 +48,9 @@
                 public Perro() 
                 {
                     nombre = "preguntale";
-                }
-
-                public void muestra() 
-            {
-                Console.WriteLine(especie + " (clase especie)");
-                Console.WriteLine(tipoAlimentacion + " (clase mamifero)");
                 Console.WriteLine(nombre + " (clase perro)");
             }
+
             }
 
             class Prueba
@@ -61,7 +58,6 @@
                 static void Main(string[] args)
                 {
                     Perro p = new Perro();
-                    p.muestra();
                     Console.ReadKey();
                 }
             }
