@@ -139,7 +139,7 @@ namespace Punto2
             Console.WriteLine("Segundo puesto: " + lista[1].Nombre + " Precio: " + lista[1].Precio);
             Console.WriteLine("Tercer puesto: " + lista[2].Nombre + " Precio: " + lista[2].Precio);
 
-            Console.WriteLine("mas barato: " + lista[0].Nombre + " Precio: " + lista[0].Precio)
+            Console.WriteLine("mas barato: " + lista[0].Nombre + " Precio: " + lista[0].Precio);
             Console.WriteLine("mas caro: " + lista[0].Nombre + " Precio: " + lista[0].Precio);
         }
         static void Main(string[] args)
@@ -147,6 +147,7 @@ namespace Punto2
             Inventario i = new Inventario();
             i.IngresoDatos();
             i.MayorAMenor();
+            Console.ReadKey();
         }
     }
 }

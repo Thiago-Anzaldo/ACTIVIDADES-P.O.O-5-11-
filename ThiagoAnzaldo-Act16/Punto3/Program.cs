@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Punto3
@@ -16,113 +17,95 @@ namespace Punto3
     //Auto, cilindrada en Moto).
     //Crear un objeto de cada clase y mostrar todos sus datos por consola.
 
-    class Vehiculo
+    public class Vehiculo
     {
         private string marca;
-        private int velocidadMaxima;
+        private string velocidadMaxima;
 
-        public Vehiculo(string mar, int vel)
+        public string Marca 
         {
-            marca = mar;
-            velocidadMaxima = vel;
+            set 
+            { 
+                marca = value; 
+            }
+            get 
+            {
+                return marca;
+            }
         }
-
-        public string Marca
+        public string Velocidad
         {
-            set { marca = value; }
-            get { return marca; }
-        }
-
-        public int VelocidadMaxima
-        {
-            set { velocidadMaxima = value; }
-            get { return velocidadMaxima; }
-        }
-    }
-
-    class Auto : Vehiculo
-    {
-        private int cantidadPuertas;
-
-        public Auto(string mar, int vel, int puertas) : base(mar, vel)
-        {
-            cantidadPuertas = puertas;
-        }
-
-        public int CantidadPuertas
-        {
-            set { cantidadPuertas = value; }
-            get { return cantidadPuertas; }
+            set
+            {
+                velocidadMaxima = value;
+            }
+            get
+            {
+                return velocidadMaxima;
+            }
         }
     }
 
-    class Moto : Vehiculo
+    public class Auto : Vehiculo 
     {
-        private int cilindrada;
-
-        public Moto(string mar, int vel, int cc) : base(mar, vel)
+        private Vehiculo baseAuto;
+        private string cantidadPuertas;
+        public Auto()
         {
-            cilindrada = cc;
+            baseAuto = new Vehiculo();
+
+            Console.WriteLine("Cual es la marca de auto: ");
+            baseAuto.Marca = Console.ReadLine();
+
+            Console.WriteLine("Cual es la velocidad maxima: ");
+            baseAuto.Velocidad = Console.ReadLine();
+
+            Console.WriteLine("cantidad de puertas: ");
+            cantidadPuertas = Console.ReadLine();
         }
 
-        public int Cilindrada
+        public void MuestraAuto() 
         {
-            set { cilindrada = value; }
-            get { return cilindrada; }
+            Console.WriteLine("Marca de la auto: " + baseAuto.Marca);
+            Console.WriteLine("Velocidad de la auto: " + baseAuto.Velocidad);
+            Console.WriteLine("su cilindrada: " + cantidadPuertas);
         }
     }
 
-    class ControlVehiculos
+    public class Moto : Vehiculo
     {
-        private Auto miAuto;
-        private Moto miMoto;
-
-        public void IngresoDatos()
+        private Vehiculo baseMoto;
+        private string cilindrada;
+        public Moto() 
         {
-            string linea;
+            baseMoto = new Vehiculo();
 
-            Console.Write("Ingrese marca del auto: ");
-            string marcaAuto = Console.ReadLine();
+            Console.WriteLine("Cual es la marca de moto: ");
+            baseMoto.Marca = Console.ReadLine();
 
-            Console.Write("Ingrese velocidad máxima del auto: ");
-            linea = Console.ReadLine();
-            int velAuto = int.Parse(linea);
-            Console.Write("Ingrese cantidad de puertas: ");
-            linea = Console.ReadLine();
-            int puertasAuto = int.Parse(linea);
+            Console.WriteLine("Cual es la velocidad maxima: ");
+            baseMoto.Velocidad = Console.ReadLine();
 
-            miAuto = new Auto(marcaAuto, velAuto, puertasAuto);
-
-            // INGRESO DE LA MOTO
-            Console.Write("\nIngrese marca de la moto: ");
-            string marcaMoto = Console.ReadLine();
-            Console.Write("Ingrese velocidad máxima de la moto: ");
-            linea = Console.ReadLine();
-            int velMoto = int.Parse(linea);
-            Console.Write("Ingrese cilindrada: ");
-            linea = Console.ReadLine();
-            int ccMoto = int.Parse(linea);
-
-            miMoto = new Moto(marcaMoto, velMoto, ccMoto);
+            Console.WriteLine("cilindrada: ");
+            cilindrada = Console.ReadLine();
         }
-
-        public void MostrarReporte()
+        public void MuestraMoto() 
         {
-            Console.WriteLine("Marca: " + miAuto.Marca);
-            Console.WriteLine("Velocidad Máxima: " + miAuto.VelocidadMaxima + " km/h");
-            Console.WriteLine("Cantidad de Puertas: " + miAuto.CantidadPuertas);
-            Console.WriteLine("\n");
-            Console.WriteLine("Marca: " + miMoto.Marca);
-            Console.WriteLine("Velocidad Máxima: " + miMoto.VelocidadMaxima + " km/h");
-            Console.WriteLine("Cilindrada: " + miMoto.Cilindrada + " cc");
-        }
 
+            Console.WriteLine("Marca de la moto: "+baseMoto.Marca);
+            Console.WriteLine("Velocidad de la moto: "+baseMoto.Velocidad);
+            Console.WriteLine("su cilindrada: "+cilindrada);
+        }
+    }
+        class prueba
+    {
         static void Main(string[] args)
         {
-            ControlVehiculos cv = new ControlVehiculos();
-            cv.IngresoDatos();
-            cv.MostrarReporte();
+            Auto a = new Auto();
 
+            Moto m = new Moto();
+            m.MuestraMoto();
+            a.MuestraAuto();
             Console.ReadKey();
         }
     }
