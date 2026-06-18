@@ -23,22 +23,12 @@ namespace Punto1
     // Crear un objeto de la clase Profesor, interactuar con sus propiedades y comprobar
     //que puede acceder tanto a sus métodos propios como a los de la clase base.
 
-    class PersonaGimnasio
+    public class PersonaGimnasio
     {
         private string nombre;
         private int dni;
 
 
-        //public PersonaGimnasio()
-        //{
-        //    string linea;
-        //    Console.Write("Ingrese el nombre: ");
-        //    nombre = Console.ReadLine();
-
-        //    Console.Write("Ingrese su dni (sin espacios): ");
-        //    linea = Console.ReadLine();
-        //    dni = int.Parse(linea);
-        //}
         public string Nombre
         {
             set
@@ -62,40 +52,38 @@ namespace Punto1
                 return dni;
             }
         }
-
         public void muestraPersonaGimnasio()
         {
             Console.WriteLine("Nombre: " + nombre);
             Console.WriteLine("Dni: " + dni);
+            Console.WriteLine("\n");
         }
+
     }
 
-    class Profesor : PersonaGimnasio
+    public class Profesor : PersonaGimnasio
     {
         private string especialidad;
 
-        public Profesor()
+        public void aProfesor()
         {
-
-            Console.Write("Ingrese la especialidad del profesor: ");
-            especialidad = Console.ReadLine();
-
-        }
-        public void muestra()
-        {
-            Console.WriteLine(Nombre);
+            especialidad = "correr";
+            Console.WriteLine("Nombre profesor: "+Nombre);
+            Console.WriteLine("dni: "+Dni);
+            Console.WriteLine("especialidad: "+especialidad);
         }
         static void Main(string[] args)
         {
 
             PersonaGimnasio pg = new PersonaGimnasio();
-            pg.Nombre = "asd";
+            pg.Nombre = "juansito";
             pg.Dni = 2;
             pg.muestraPersonaGimnasio();
 
-
             Profesor p = new Profesor();
-            p.muestra();
+            p.Dni = 3;
+            p.Nombre = "juan";
+            p.aProfesor();
             Console.ReadKey();
         }
     }

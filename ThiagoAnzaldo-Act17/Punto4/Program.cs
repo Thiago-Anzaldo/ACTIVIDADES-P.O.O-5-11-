@@ -29,9 +29,9 @@ namespace Punto4
         private string TipoMaterial;
         public Material() 
         {
+            Console.WriteLine("CONSTRUCTOR DE LA CLASE MATERIAL EJECUTADO");
             Console.Write("Ingrese el tipo del material: ");
             TipoMaterial = Console.ReadLine();
-            Console.WriteLine("CONSTRUCTOR DE LA CLASE MATERIAL EJECUTADO");
         }
 
         public string ObtenerTipoMaterial 
@@ -48,20 +48,34 @@ namespace Punto4
         private string FuncionPrincipal;
         public Herramienta() 
         {
+            Console.WriteLine("CONSTRUCTOR DE LA CLASE HERRAMIENTA EJECUTADO");
             Console.Write("Ingrese la funcion principal: ");
             FuncionPrincipal = Console.ReadLine();
-            Console.WriteLine("CONSTRUCTOR DE LA CLASE HERRAMIENTA EJECUTADO");
         }
-
+        public string ObtenerFuncionPrincipal
+        {
+            get
+            {
+                return FuncionPrincipal;
+            }
+        }
     }
     class Martillo : Herramienta
     {
         private string PesoGramos;
         public Martillo()
         {
+            Console.WriteLine("CONSTRUCTOR DE LA CLASE MARTILLO EJECUTADO");
             Console.Write("Ingrese el Peso en gramos: ");
             PesoGramos = Console.ReadLine();
-            Console.WriteLine("CONSTRUCTOR DE LA CLASE MARTILLO EJECUTADO");
+            Console.WriteLine("\n");
+        }
+
+        public void muestra() 
+        {
+            Console.WriteLine("peso en gramos: "+PesoGramos);
+            Console.WriteLine("Tipo de material: "+ObtenerTipoMaterial);
+            Console.WriteLine("Funcion Principal: "+ObtenerFuncionPrincipal);
         }
     }
 
@@ -71,7 +85,7 @@ namespace Punto4
         static void Main(string[] args)
         {
             Martillo m = new Martillo();
-
+            m.muestra();
             Console.ReadKey();
         }
     }
