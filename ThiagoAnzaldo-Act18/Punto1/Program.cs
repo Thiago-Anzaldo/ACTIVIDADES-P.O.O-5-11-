@@ -8,8 +8,8 @@ namespace EjercicioEnergia
 {
     class DispositivoEnergia
     {
-        private protected string CodigoIdentificador;
-        private protected double GeneracionKwh;
+        private string CodigoIdentificador;
+        private double GeneracionKwh;
 
         public string ObtenerCodigo
         {
@@ -70,8 +70,8 @@ namespace EjercicioEnergia
 
         public void ImprimirDatosPanel()
         {
-            Console.WriteLine("codigo identificador: " + CodigoIdentificador);
-            Console.WriteLine("generacion kwh: " + GeneracionKwh);
+            Console.WriteLine("codigo identificador: " + ObtenerCodigo);
+            Console.WriteLine("generacion kwh: " + ObtenerGeneracion);
             Console.WriteLine("area en metros cuadrados: " + AreaMetros);
             Console.WriteLine("\n");
         }
