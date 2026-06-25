@@ -22,12 +22,13 @@ namespace Punto3
     //parámetros unificados por consola.
     internal class SondaExploradora
     {
-        private string Modelo;
-        private int AutonomiaMinutos;
+        protected string Modelo;
+        protected int AutonomiaMinutos;
 
-        public SondaExploradora()
+        public SondaExploradora(string modelo, int autonomiaMinutos)
         {
-            Console.WriteLine(Modelo);
+            Modelo = modelo;
+            AutonomiaMinutos = autonomiaMinutos;
         }
 
         public string ObtenerModelo
@@ -51,27 +52,52 @@ namespace Punto3
     }
     class SondaSubmarina : SondaExploradora
     {
-        int PresionAtmosferica;
+        protected int PresionAtmosferica;
 
-        public SondaSubmarina(string modelo, int presion)
+        public SondaSubmarina(string modelo,int autonomiaMinutos, int presion) : base(modelo, autonomiaMinutos)
         {
             PresionAtmosferica = presion;
+        }
+        public int ObtenerPresion
+        {
+            get
+            {
+                return PresionAtmosferica;
+            }
+            set
+            {
+                PresionAtmosferica = value;
+            }
         }
     }
     class RoverTerrestre : SondaExploradora
     {
-        int CantidadRuedas;
+        protected int CantidadRuedas;
 
-        public RoverTerrestre(string modelo, int cantidadRuedas) 
+        public RoverTerrestre(string modelo,int autonomiaMinutos, int cantidadRuedas) : base(modelo, autonomiaMinutos)
         {
-            ObtenerModelo = modelo;
             CantidadRuedas= cantidadRuedas;
+        }
+        public int ObtenerRuedas
+        {
+            get
+            {
+                return CantidadRuedas;
+            }
+            set 
+            {
+                CantidadRuedas = value;
+            }
         }
         static void Main(string[] args)
         {
             //SondaExploradora se = new SondaExploradora("asd");
 
-            SondaSubmarina ss = new SondaSubmarina("asd",2);
+            SondaSubmarina ss = new SondaSubmarina("audi",2,3);
+            RoverTerrestre rt = new RoverTerrestre("volks", 4, 5);
+
+            Console.WriteLine("modelo:" + rt.ObtenerModelo + " autonomia por minutos:" + rt.ObtenerMinutos + " cantidad de ruedas:" + rt.ObtenerRuedas);
+            Console.WriteLine("Modelo:" + ss.ObtenerModelo + " Autonomia por minutos:" + ss.ObtenerMinutos + " Presion maxima:" + ss.ObtenerPresion);
         }
     }
 }
