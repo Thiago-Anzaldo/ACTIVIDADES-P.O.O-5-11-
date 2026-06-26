@@ -98,6 +98,8 @@ namespace Punto3
 
             Console.WriteLine("modelo:" + rt.ObtenerModelo + " autonomia por minutos:" + rt.ObtenerMinutos + " cantidad de ruedas:" + rt.ObtenerRuedas);
             Console.WriteLine("Modelo:" + ss.ObtenerModelo + " Autonomia por minutos:" + ss.ObtenerMinutos + " Presion maxima:" + ss.ObtenerPresion);
+
+            Console.ReadKey();
         }
     }
 }
