@@ -21,24 +21,60 @@ namespace Punto3
     // Determinar cuál fue la zona más visitada.
     internal class InstitutoArqueologia
     {
-        private int[,] visitas;
-
-        public InstitutoArqueologia()
-        {
-            string linea;
-            visitas = new int[3,4];
-
-            for(int i = 0; i < 3; i++) 
-            {
-                for (int j = 0; j < 4; j++) 
-                {
-                                                                    
-                }
-            }
-        }
-
         static void Main(string[] args)
         {
+            int[,] visitas;
+            int[] totalVisitas;
+
+            List<(string zonas, int totalZonas)> zonasVisitas = new List<(string zonas, int totalZonas)>();
+
+            visitas = new int[3, 4];
+            totalVisitas = new int[3];
+            int total = 0;
+            int masVisitada = 0;
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("zona N°:" + i);
+                for (int j = 0; j < 4; j++)
+                {
+                    Console.WriteLine("dia N°:" + j);
+                    Console.WriteLine("ingrese el total de visitas");
+                    visitas[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+            Console.WriteLine("\n");
+            Console.WriteLine("zonas:");
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("\n");
+                total = 0;
+                Console.Write("zona:" + (i + 1));
+                for (int j = 0; j < 4; j++)
+                {
+                    Console.Write("  " + visitas[i, j] + "  ");
+                    total = total + visitas[i, j];
+                }
+                totalVisitas[i] = total;
+                zonasVisitas.Add(("zona: "+ i + " ", total));
+                Console.Write("total:" + totalVisitas[i]);
+                Console.WriteLine("\n");
+            }
+            foreach (var m in zonasVisitas)
+            {
+                if (m.totalZonas > masVisitada)
+                {
+                    masVisitada = m.totalZonas;
+                }
+            }
+            foreach (var m in zonasVisitas)
+            {
+                if (m.totalZonas == masVisitada)
+                {
+                    Console.WriteLine("\n");
+                    Console.WriteLine("La zona mas visitada fue la " +m.zonas+ " con "+m.totalZonas);
+                }
+            }
+            Console.ReadKey();
         }
     }
 }
