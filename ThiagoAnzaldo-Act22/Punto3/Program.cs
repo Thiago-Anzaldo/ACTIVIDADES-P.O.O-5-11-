@@ -36,24 +36,35 @@ namespace Punto3
         {
             duracion = minutos;
         }
+
+        public void MostrarDuracion() 
+        {
+            Console.Write(deportista + " lo hizo en ");
+            Console.WriteLine(duracion);
+        }
         static void Main(string[] args)
         {
             List<Entrenamiento> entrenamientos = new List<Entrenamiento>();
 
             Entrenamiento e1 = new Entrenamiento("juan");
             e1.ObtenerDuracion(1, 30);
+            e1.MostrarDuracion();
 
             Entrenamiento e2 = new Entrenamiento("marcos");
             e2.ObtenerDuracion(180);
+            e2.MostrarDuracion();
 
             Entrenamiento e3 = new Entrenamiento("jorge");
             e3.ObtenerDuracion(2, 15);
+            e3.MostrarDuracion();
 
             Entrenamiento e4 = new Entrenamiento("alex");
             e4.ObtenerDuracion(90);
+            e4.MostrarDuracion();
 
             Entrenamiento e5 = new Entrenamiento("dylan");
             e5.ObtenerDuracion(1, 45);
+            e5.MostrarDuracion();
 
             entrenamientos.Add(e1);
             entrenamientos.Add(e2);
