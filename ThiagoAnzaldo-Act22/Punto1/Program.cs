@@ -40,7 +40,7 @@ namespace Punto1
             linea = Console.ReadLine();
             int minuto = int.Parse(linea);
 
-            DateTime horaInicio = new DateTime(2026,7,dia,hora,minuto,00);
+            horaInicio = new DateTime(2026,7,dia,hora,minuto,00);
 
             Console.WriteLine(horaInicio);
 
@@ -53,39 +53,62 @@ namespace Punto1
             linea = Console.ReadLine();
             minuto = int.Parse(linea);
 
-            DateTime horaFinal = new DateTime(2026, 7, dia, hora, minuto, 00);
+            horaFin = new DateTime(2026, 7, dia, hora, minuto, 00);
 
-            Console.WriteLine(horaFinal);
+            Console.WriteLine(horaFin);
         }
 
         public ClaseGimnasio(string nombreClase, int dia, int hora,int minuto, int horaF, int minutoF) 
         {
+            this.nombreClase = nombreClase;
+
+
+            horaInicio = new DateTime(2026, 7, dia, hora, minuto, 00);
+            horaFin = new DateTime(2026, 7, dia, horaF, minutoF, 00);
+
+            Console.WriteLine();
             Console.WriteLine(nombreClase);
-
-            DateTime horaInicio = new DateTime(2026, 7, dia, hora, minuto, 00);
-            DateTime horaFinal = new DateTime(2026, 7, dia, horaF, minutoF, 00);
-
             Console.WriteLine(horaInicio);
-            Console.WriteLine(horaFinal);
-
-            TimeSpan duracion= horaFinal - horaInicio;
-
-            Console.WriteLine(duracion);
-        }
-
-        public void duracion() 
-        {
-            TimeSpan duracion = horaFin - horaInicio;
-
             Console.WriteLine(horaFin);
-            Console.WriteLine(horaInicio);
-            Console.WriteLine(duracion);
         }
+
+        public TimeSpan duracion() 
+        {
+            return horaFin- horaInicio;
+        }
+        public DateTime horasInicio() 
+        {
+            return horaInicio;
+        }
+
         static void Main(string[] args)
         {
-            //ClaseGimnasio cg1 = new ClaseGimnasio();
-            ClaseGimnasio cg2 = new ClaseGimnasio("asd", 1, 2, 3, 4, 5);
+            ClaseGimnasio[] clases = new ClaseGimnasio[3];
 
+            clases[0] = new ClaseGimnasio("fuerza", 1, 2, 3, 4, 5);
+            clases[1] = new ClaseGimnasio("resistencia", 8, 6, 4, 1, 5);
+            clases[2] = new ClaseGimnasio("correr", 2, 3, 10, 2, 5);
+
+            int mayorDuracion = 0;
+            int masTemprana = 0;
+
+            for (int i =0; i<3;i++)
+            {
+                if (clases[i].duracion() > clases[mayorDuracion].duracion()) 
+                {
+                    mayorDuracion = i;
+                }
+                if (clases[i].horasInicio() < clases[masTemprana].horasInicio()) 
+                {
+                    masTemprana = i;
+                }
+            }
+
+            Console.WriteLine("La clase con mayor duracion es "+ clases[mayorDuracion].nombreClase+" con: " + clases[mayorDuracion].duracion());
+
+            Console.WriteLine("la clase mas temprana es "+ clases[masTemprana].nombreClase);
+
+            Console.ReadKey();
         }
     }
 }
