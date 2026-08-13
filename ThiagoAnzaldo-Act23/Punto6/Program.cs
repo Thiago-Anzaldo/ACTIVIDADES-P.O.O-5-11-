@@ -132,6 +132,7 @@ namespace Punto6
             bc.ListarCatalogo();
             bc.FiltrarPorAnio();
             bc.RemoverLibro();
+            Console.ReadKey();
         }
     }
 }
