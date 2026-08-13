@@ -118,7 +118,6 @@ namespace Punto1
         }
         static void Main(string[] args)
         {
-            Console.ReadKey();
             ServidorImpresion si = new ServidorImpresion();
 
             string linea;
@@ -131,6 +130,7 @@ namespace Punto1
                 Console.WriteLine("1.Agregar documento");
                 Console.WriteLine("2.Imprimir el siguiente documento");
                 Console.WriteLine("3.Mostrar cola pendiente de archivos");
+                Console.WriteLine("4.Terminar");
                 linea = Console.ReadLine();
 
                 if (linea != "1" && linea != "2" && linea != "3")
@@ -149,14 +149,18 @@ namespace Punto1
                     {
                         si.ImprimirSiguiente();
                     }
-                    else if (opcion == 3)
+                    else if (opcion == 3) 
                     {
                         si.MostrarColaPendiente();
+                    }
+                    else if (opcion == 4)
+                    {
+                        break;
                     }
                     Console.Clear();
                 }
             }
-
+            Console.ReadKey();
         }
     }
 }

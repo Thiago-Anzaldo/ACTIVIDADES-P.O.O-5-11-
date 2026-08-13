@@ -65,23 +65,25 @@ namespace Punto4
 
             while (true)
             {
-                do {
+                do
+                {
                     Console.Write("ingrese el nombre del dispositivo: ");
                     nom = Console.ReadLine();
-                } while (nom=="");
+                } while (nom == "");
 
-                do {
+                do
+                {
                     Console.WriteLine("cuantos watts consume: ");
                     linea = Console.ReadLine();
-                } while (linea=="");
-                    watts = double.Parse(linea);
+                } while (linea == "");
+                watts = double.Parse(linea);
                 dispositivos.Add(new DispostivoInteligente(nom, watts));
 
                 do
                 {
                     Console.WriteLine("quiere agregar un nuevo dispositivo? (si o no)");
                     respuesta = Console.ReadLine();
-                } while (respuesta != "si"&& respuesta!="no");
+                } while (respuesta != "si" && respuesta != "no");
 
                 if (respuesta == "no")
                 {
@@ -122,7 +124,7 @@ namespace Punto4
                 {
                     Console.WriteLine("dispotivo desconectado");
                     dispositivos.Remove(disp);
-                    break;
+                    Console.WriteLine(disp.NombreDispositivo);
                 }
             }
         }
@@ -132,6 +134,7 @@ namespace Punto4
             pd.MostrarDispositivos();
             pd.CalcularConsumoTotal();
             pd.DesconectarDispositivo();
+            Console.ReadKey();
         }
     }
 }

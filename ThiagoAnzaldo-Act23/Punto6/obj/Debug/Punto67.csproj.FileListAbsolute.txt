@@ -1,0 +1,7 @@
+C:\Users\alumno.ET26\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act23\Punto67\bin\Debug\Punto67.exe.config
+C:\Users\alumno.ET26\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act23\Punto67\bin\Debug\Punto67.exe
+C:\Users\alumno.ET26\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act23\Punto67\bin\Debug\Punto67.pdb
+C:\Users\alumno.ET26\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act23\Punto67\obj\Debug\Punto67.csproj.AssemblyReference.cache
+C:\Users\alumno.ET26\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act23\Punto67\obj\Debug\Punto67.csproj.CoreCompileInputs.cache
+C:\Users\alumno.ET26\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act23\Punto67\obj\Debug\Punto67.exe
+C:\Users\alumno.ET26\source\repos\ACTIVIDADES-P.O.O-5-11-\ThiagoAnzaldo-Act23\Punto67\obj\Debug\Punto67.pdb
